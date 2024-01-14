@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: skyblue;
+}
+
+header{
+    background-image:linear-gradient(to bottom, blue, rgb(27, 27, 248)) ;
+}
+
+nav{
+    background-color: rgb(27, 27, 248);
+}
+
+main{
+    background-color: white;
+}
+
