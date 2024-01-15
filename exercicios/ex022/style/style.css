@@ -89,13 +89,6 @@ main p{
     padding: 0px 0px 10px 0px; 
 }
 
-#cinema{
-    width: 100px;
-    height: 100px;
-    display: inline-block;
-    background-color: white;
-    background-image: url('../imagens/cinema.png');
-}
 
 aside{
     background-image: url('../imagens/wallpaper004.jpg');
