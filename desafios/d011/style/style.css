@@ -39,17 +39,21 @@ header{
 header > h1{
     text-align: center;
     padding-top: 20px;
-    font-size: 2.8em;
+    font-size: 2.4em;
+    max-width: 500px;
+    margin: auto;
 }
 
 header > p{
     font-size: 1.4em;
     text-align: center;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 20px 10px 20px;
+    max-width: 600px;
 }
 
 nav{
     background-color: var(--cor02);
+    padding: 10px;
     
 }
 
@@ -58,11 +62,17 @@ nav > a{
     text-decoration: none;
     font-size: 1.1em;
     padding: 10px;
+    border-radius: 10px;
+}
+
+nav > a:hover{
+    background-color: var(--cor05);
+    color: #031D40;
 }
 
 main{
     background-color:white ;
-    max-width: 800px;
+    max-width: 600px;
     min-width: 280px;
     margin: auto;
     padding: 10px;
@@ -86,7 +96,9 @@ main h3{
 }
 aside{
     position: relative;
-    height: 400px;
+    height: 450px;
+    max-width: 1000px;
+    min-width: 280px;
     background-image: linear-gradient(to bottom, var(--cor03), var(--cor04));
     margin: 10px -10px -100px -10px;
     border-bottom-left-radius: 10px;
@@ -109,10 +121,10 @@ aside p{
 
 
 ul{
-    margin: 20px 30px 10px 150px;
     list-style-position: inside;
     columns: 2;
     font-size: 1.3em;
+    padding: 10px 10px 10px 30px;
 }
 
 #astronauta{
@@ -121,13 +133,14 @@ ul{
     height: 200px;
     background-image: url('../imagens/astronauta.png');
     background-size: 100% 100%;
-    margin: auto;
+    
+    
     
     
     top: 50%;
     left: 50%;
 
-    transform: translate(-60%, -5%);
+    transform: translate(-60%, 10%);
 
 }
 
