@@ -58,7 +58,7 @@ section{
     padding-left: 30px;
     font-family: var(--font03);
     font-size: 2.9vw;
-    font-weight: 600;
+    font-weight: 600 ;
 }
 
 section > p{
