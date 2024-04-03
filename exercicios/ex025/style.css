@@ -1,70 +1,70 @@
 @charset "UTF-8";
 
 *{
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body{
-    height: 100vh;
-    width: 100vw;
+
+body{
+    background-color: indigo;
+    background-attachment: fixed;
 }
 
-main{
-    position: relative;
-    background-image: linear-gradient(to bottom,#03658C, #2E838C );
-    height: 100vh;
-    line-height: 2em;
+header{
+    background-image: linear-gradient(to bottom, blue, rgb(2, 2, 189));
+    height: 140px;
 }
 
-section{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px ;
-    height: 500px;
-    background-color: #ebeff24d;
-    box-shadow: 5px 6px 6px rgba(0, 0, 0, 0.315);
-    border-radius: 10px;
-    
-}
-
-div{
-    background-color: white;
-    padding-bottom: 20px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    
-}
-h1{
-    padding: 10px 0px 10px 0px ;
+header h1{
     text-align: center;
-    font-size: 1.7em;
-    font-weight: 300;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.329);
+    padding-top: 50px ;
+    font-weight: 100;
+    font-size: 2.7em;
 }
 
-p > label{
-    padding-left: 60px;
+nav{
+    background-color: rgb(2, 2, 189);
+    padding: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.479);
+    text-align: center;
+}
+
+nav > a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    border-radius: 7px;
     font-weight: bolder;
     font-size: 1.1em;
 }
 
-
-p > input#sube{
-    padding: 5px;
-    margin: 20px 0px 0px 20px;
+nav > a:hover{
+    background-color: blue;
+    text-decoration: underline;
+    
 }
 
-p > input#subl{
-    padding: 5px;
-    margin: 20px 0px 0px 20px;
+main{
+    width: 620px;
+    margin: auto;
+    background-color: white;
 }
 
-
-
-::placeholder{
+main h1{
     text-align: center;
+}
+
+form{
+    line-height: 2em;
+    padding: 20px;
+}
+
+fieldset#dados, fieldset#esportes, fieldset#satis{
+    padding: 20px;
+}
+
+fieldset#dados > p{
+    font-size: 1.1em
 }

@@ -4,34 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
-    <style>
-        *{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-    </style>
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
         <fieldset>
             <legend>Sexo</legend>
-            <label for="isxmas"><input type="radio" name="sexo" id="isxmas" value="M"> Masculino</label> <br>
-            <label for="isxfem"><input type="radio" name="sexo" id="isxfem" value="F"> Feminino</label> <br>
+
+            <label for="sxmas"><input type="radio" name="sexo" id="sxmas" checked value="M"> Masculino</label> <br>
+
+            <label for="sxfem"><input type="radio" name="sexo" id="sxfem" value="F"> Feminino</label> <br>
+
         </fieldset>
+
         <fieldset>
             <legend>Esportes Favoritos</legend>
-            <label for="iesfut"><input type="checkbox" name="esfut" id="iesfut"> Futebol </label> <br>
+
             <label for="iesbas"><input type="checkbox" name="esbas" id="iesbas"> Basquete</label> <br>
+
+            <label for="iesfut"><input type="checkbox" name="esfut" id="iesfut" checked> Futebol</label> <br>
+
             <label for="iesnat"><input type="checkbox" name="esnat" id="iesnat"> Natação</label> <br>
-            <label for="iesten"><input type="checkbox" name="esten" id="iesten"> Tênis </label><br>
+
+            <label for="iesten"><input type="checkbox" name="esten" id="iesten"> Tênis</label> <br>
+
         </fieldset>
-        
-        
+
         <p>
             <input type="submit" value="Enviar">
-            <input type="submit" value="Limpar">
+
+            <input type="reset" value="Limpar">
         </p>
-        
     </form>
 </body>
 </html>
