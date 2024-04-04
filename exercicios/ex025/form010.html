@@ -6,24 +6,27 @@
     <title>Formulário</title>
 </head>
 <body>
-    <h1>Exercicio de Formulário</h1>
+    <h1>Exemplo de Formulário</h1>
     <form action="cadastro.php" method="get">
 
         <p>
             <label for="iano">Em que ano você nasceu?</label>
-            <input type="number" name="ano" id="iano" min="1900" max="2024" oninput="calcIdade()">
+            <input type="number" name="ano" id="iano" max="2024" min="1900" required oninput="calcIdade()">
         </p>
 
         <p>
             <label for="iidade">Sua idade é:</label>
-            <output id="iidade">0</output>
+            <output name="idade" id="iidade">0</output>
         </p>
+
+
 
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
     </form>
+
 
     <script>
         function calcIdade(){
