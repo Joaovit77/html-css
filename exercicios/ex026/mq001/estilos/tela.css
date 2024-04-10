@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
-
-/* Estilos para tela */
+/* Estilo para tela */
 
 *{
     margin: 0px;
@@ -10,17 +9,17 @@
 
 html{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 1em ;
 }
 
 header{
-    background-color: rgba(158, 158, 158);
+    background-color: lightgray;
 }
 
-
-header > h1{
+header h1{
     text-align: center;
 }
+
 
 menu ul{
     list-style-type: none;
@@ -34,8 +33,9 @@ menu li{
     padding: 10px;
 }
 
+
 article{
-    width: 570px;
-    display: block;
+    width: 500px;
     margin: auto;
+    display: block;
 }
