@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px) and (orientation: landscape){
+@media screen and (min-width: 768px) {
     span#burguer{
         display: none;
     }
@@ -16,5 +16,4 @@
     main{
         width: 768px;
     }
-
 }
