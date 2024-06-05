@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    background-color: lightgray;
+}
+
+header{
+    background-color: rgb(131, 131, 131);
+}
+
+header h1{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+span#burguer{
+    display: block;
+    background-color: rgb(39, 39, 39);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+span#burguer:hover{
+    background-color: white;
+    color: rgb(39, 39, 39);
+}
+
+menu > ul{
+    list-style-type: none;
+}
+
+menu{
+    display: none;
+}
+
+menu a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(87, 87, 87);
+    border-top: 2px solid rgb(143, 143, 143);
+}
+
+menu a:hover{
+    background-color: gray;
+}
+
+
+main{
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+article h2{
+    margin: 10px;
+}
+
+article p{
+    text-indent: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+footer{
+    background-color: rgb(70, 70, 70);
+    margin-top: 90px;
+    padding: 7px ;
+    color: white;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    
+}
