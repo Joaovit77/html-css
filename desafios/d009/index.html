@@ -3,13 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Videos</title>
+    <title>Meus Videos</title>
+    <style>
+        *{
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            background-color: blue;
+        }
+        main{
+            position: relative;
+            top:320px;
+            left: 230px;
+            transform: translate(-50%, -50%);
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.493);
+            width: 405px;
+            height: 450px;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 0px 0px 5px 5px;
+            box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.582);
+        }
+        main > h1{
+            text-shadow: 2px 2px 3px black;
+            font-weight: 300;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        main img:hover{
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.712);
+        }
+
+        img.cima{
+            margin-top: 60px;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Videos legais para assistir</h1>
-    <pre>
-        <a href="pg02.html"><img src="thumbs/thumb-html.png" alt="Thumb video 1"></a> <a href="pg03.html"><img src="thumbs/thumb-js.png" alt="Thumb video 2"></a>
-        <a href="pg04.html"><img src="thumbs/thumb-hardware.png" alt="Thum video 3"></a> <a href="pg05.html"><img src="thumbs/thumb-python.png" alt="Thumb video 3"></a>
-    </pre>
+    <main>
+        <h1>Videos legais para assistir</h1>
+        <a  href="pg02.html"><img class="cima" src="thumbs/thumb-html.png" alt="html"></a>
+        <a  href="pg03.html"><img class="cima" src="thumbs/thumb-js.png" alt="javascript"></a>
+        <br>
+        <a href="pg04.html"><img src="thumbs/thumb-hardware.png" alt="hardware"></a>
+        <a href="pg05.html"><img src="thumbs/thumb-python.png" alt="python"></a>
+    </main>
 </body>
 </html>

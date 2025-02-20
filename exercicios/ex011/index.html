@@ -7,27 +7,18 @@
 </head>
 <body>
     <h1>Imagem dinâmica</h1>
-    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do navegador.</p>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
     <picture>
-        <source media="(max-width: 750px )" srcset="imagens/pequeno.png" type="image/png">
-        <source media="(max-width: 1050px )" srcset="imagens/medio.png" type="image/png">
-        <img src="imagens/grande.png" alt="Imagem Flexivel">
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
     </picture>
     <h1>Reproduzindo Áudio</h1>
     <p>Vamos aprender a reproduzir áudios em HTML5</p>
-    <!--Maneira mais simples de colocar áudio-->
-    <audio src="midia/underground.mp3" controls></audio>
-    <!--Você pode colocar o parametro autoplay, mas não achei necessario, começar tocar sozinho e ainda é um parametro que não funciona em todos os navegadores-->
-    
-    <!--Outra forma de colocar áudios-->
-    <!--Essa forma não vai reproduzir todos os formatos de áudio, vai tentar reproduzir um, se não reproduzir, vai tentar reproduzir outro e assim por diante.-->
-    <audio preload="metadata" controls loop>
+    <audio style="display: block;" src="midia/underground.mp3" autoplay controls></audio>
+    <!-- OUTROS FORMATOS COMPATIVEIS -> MP3 WAV OGG -->
+    <audio preload="metadata" controls>
         <source src="midia/guanacast-33.mp3" type="audio/mpeg">
-        <source src="midia/guanacast-33.ogg" type="audio/ogg">
-        <!--Por mais que o arquivo Wav seja compativel, evite de usa-lo, é um arquivo grande e como você sabe, arquivos grandes não são bons em sites.-->
-        <source src="midia/guanacast-33.wav" type="audio/wav">
-        <!--Se não reproduzir esses-->
-        <p>Infelizmente seu navegador não consegue reproduzir áudio <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo Mp3</a></p>
     </audio>
 </body>
 </html>
