@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,32 +7,29 @@
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="get" autocomplete="on">
 
         <p>
             <label for="iano">Em que ano você nasceu?</label>
-            <input type="number" name="ano" id="iano" max="2024" min="1900" required oninput="calcIdade()">
+            <input type="number" name="ano" id="iano" min="1900" max="2025" oninput="calcIdade()">
         </p>
-
+        
         <p>
             <label for="iidade">Sua idade é:</label>
             <output name="idade" id="iidade">0</output>
         </p>
-
-
 
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
     </form>
-
-
-    <script>
+   <script>
         function calcIdade(){
             let atual = new Date().getFullYear()
             iidade.innerHTML = Number(atual) - Number(iano.value)
         }
-    </script>
+
+   </script>
 </body>
 </html>
