@@ -5,7 +5,7 @@
     margin: 0px;
     padding: 0px;
 }
-
+ 
 body, html{
     background-color: lightgray;
 }
@@ -34,7 +34,7 @@ span#burguer:hover{
 }
 
 menu{
-    display: none;
+    display: none ;
 }
 
 menu > ul{
