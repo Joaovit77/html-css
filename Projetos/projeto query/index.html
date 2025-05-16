@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio Digital</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        main{
+            background-color: rgba(0, 0, 0, 0.459);
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Hora atual:</h1>
+        <h2 id="data"></h2>
+        <h2 id="relogio"></h2>
+    </main>
+
+    <script>
+        function atualizarRelogio(){
+            let agora = new Date();
+            // Obtendo os valores de hora
+            let horas = String(agora.getHours()).padStart(2, "0");
+            let minutos = String(agora.getMinutes()).padStart(2, "0");
+            let segundos = String(agora.getSeconds()).padStart (2, "0");
+
+            // Obtendo os valores de data
+            let dia = String(agora.getDate()).padStart(2, "0")
+            let mes = String(agora.getMonth()+ 1).padStart(2, "0")
+            let ano = agora.getFullYear();
+
+            let elemento = document.getElementById("relogio")
+            document.getElementById("data").innerText = `${dia}/${mes}/${ano}`;
+            document.getElementById("relogio").innerText =`${horas}:${minutos}:${segundos}`;
+            }
+
+            let cor = `rgb(${Math.random()*255}, ${Math.random()* 255}, ${Math.random()*255})`;
+            elemento.style.color = cor;  
+
+            setInterval(atualizarRelogio, 1000);
+            atualizarRelogio();
+    </script>
+</body>
+</html>

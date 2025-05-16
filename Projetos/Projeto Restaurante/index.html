@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Qualquer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media-queries.css">
+  <meta name="description" content="Restaurante no Sul da Ilha - Deliciosos pratos, ótimo atendimento e ambiente aconchegante.">
+</head>
+<body onresize="mudouTamanho()">
+
+    <header>
+      <h1>Site Restaurante</h1>
+      <p>O Melhor Restaurante Do Sul Da ilha</p>
+      <button onclick="clickMenu()" id="burguer" aria-label="Abrir Menu" class="material-symbols-outlined">menu</button>
+    </header>
+
+    <nav id="item">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Sobre nós</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <div class="item-card"><img class="imagem" src="imagem/imagem-1.jpg" alt="prato 1"><p>Prato 1</p></div>
+      <div class="item-card"><img class="imagem" src="imagem/imagem-2.jpg" alt="prato 2"><p>Prato 2</p></div>
+      <div class="item-card"><img class="imagem" src="imagem/imagem-3.jpg" alt="prato 3"><p>Prato 3</p></div>
+      <div class="item-card"><img class="imagem" src="imagem/imagem-4.jpg" alt="prato 4"><p>Prato 4</p></div>
+      <div class="item-card"><img class="imagem" src="imagem/imagem-5.jpg" alt="prato 5"><p>Prato 5</p></div>
+      <div class="item-card"><img class="imagem" src="imagem/imagem-6.jpg" alt="prato 6"><p>Prato 6</p></div>
+    </main>
+
+    <footer>
+      <p>Site Desenvolvido pelo Dev <a href="#"><span class="material-symbols-outlined" id="link-foo"> link</span>Joãovip77</a></p>
+    </footer>
+
+    <script>
+
+      function clickMenu(){
+        if (item.style.display == 'block'){
+          item.style.display = 'none'
+        } else{
+          item.style.display = 'block'
+        }
+      }
+
+      function mudouTamanho(){
+        if (window.innerWidth >= 768){
+          item.style.display = 'block'
+        } else{
+          item.style.display = 'none'
+        }
+      }
+
+    </script>
+
+</body>
+</html>

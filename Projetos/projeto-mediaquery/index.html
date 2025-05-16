@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu site</h1>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Notícias</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <h2>Revista Cientifica</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni minima cupiditate enim expedita quas quia molestiae laudantium ut, voluptas ratione corporis, atque reprehenderit ullam, vero totam quod veniam perspiciatis consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repellat temporibus nobis perferendis, sequi neque nesciunt expedita soluta id quidem omnis autem rem quod. Consequatur aperiam voluptatibus cumque quas fuga!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam perspiciatis blanditiis nisi repellat voluptatum iste, consectetur consequatur officiis! Ratione sit quis quidem rerum sunt non, et quia mollitia! Eum, odit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae eius impedit tenetur culpa. Accusantium, quos quod hic aliquam illum quibusdam voluptatum ipsam soluta in. Similique provident cupiditate delectus voluptate ipsa.</p>
+        
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, praesentium animi quis voluptates dicta mollitia ea quisquam sequi nihil ut velit laudantium distinctio. Soluta similique maxime eum? Ut, numquam consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ratione, eum, amet veniam dignissimos itaque officiis repellat tenetur accusantium temporibus inventore atque iusto nobis autem est omnis corrupti quasi illum.</p>
+        <div>
+            <h2>Icon Albert Einstein</h2>
+            <img src="imagens/ciencias-icon.png" alt="ciencias">
+        </div>
+    </main>
+    <footer>
+        <p>Site criado pelo Joãovit77</p>
+    </footer>
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } else{
+                itens.style.display = 'none'
+            } 
+        }
+        
+        
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
