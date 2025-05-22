@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cardápio online do Dog do Ciri">
+    <title>Site Cardapio</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="icon" href="imagem/favicon.ico" type="image/x-icon">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Dog do Ciri</h1>
+        <p>O melhor Hot Dog da Grande Florianópolis</p>
+        <span id="burguer" onclick="clickMenu()"     class="material-symbols-outlined">menu</span>
+    </header>
+    <nav id="item">
+        <a href="#">Home</a>
+        <a href="#">Contato</a>
+        <a href="#">Sobre nós</a>
+    </nav>
+    <main id="container" role="main">
+        <section id="father">
+            <div class="item-card">
+                <h2>Duplo Smash Burger</h2>
+                <img src="imagem/duplo-burguer.png" alt="Duplo burguer">
+                <p>Dois hambúrgueres prensados com queijo, cebola caramelizada e maionese especial no pão brioche.</p>
+                <span class="preco">R$ 24,90</span>
+            </div>
+        
+            <div class="item-card">
+                <h2>Dogão Explosivo</h2>
+                <img src="imagem/hot-dog.png" alt="Hot Dog">
+                <p>Hot dog completo com purê, milho, vinagrete, batata palha e molho da casa</p>
+                <span class="preco">R$ 16,90</span>
+            </div>
+                
+            <div class="item-card">
+                <h2>X-Bacon Supremo</h2>
+                <img src="imagem/bacon1.png" alt="Bacon">
+                <p>Hambúrguer de picanha com queijo, bacon crocante e barbecue no pão com gergelim.</p>
+                <span class="preco">R$ 22,90</span>
+            </div>
+            <div class="item-card">
+                <h2>Wrap Frango Crocante</h2>
+                <img src="imagem/wrap.png" alt="wrap frango">
+                <p>Frango empanado, alface, tomate e molho ranch enrolados em tortilla macia.</p>
+                <span class="preco">R$ 19,90</span>
+            </div>
+            <div class="item-card">
+                <h2>Misto no Pão de Queijo</h2>
+                <img src="imagem/misto-quente-3.png" alt="Misto quente">
+                <p>Presunto, queijo e requeijão entre dois pães de queijo grandes, com um sabor magnifico feito pelo nosso chefe Ciri.</p>
+                <span class="preco">R$ 14,90</span>
+            </div>
+            <div class="item-card">
+                <h2>Baguete Calabresa</h2>
+                <img src="imagem/baguete1.png" alt="Baguete">
+                <p>Calabresa acebolada com queijo gratinado e orégano na baguete crocante.</p>
+                <span class="preco">R$ 18,90</span>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Site Desenvolvido pelo Dev <a href="#">João Vitor Pinto</a>
+        </p>
+    </footer>
+    <script>
+        function clickMenu(){
+            if (item.style.display == 'none'){
+                item.style.display = 'block'
+            } else {
+                item.style.display = 'none'
+            }
+        }
+
+        function mudouTamanho(){
+            if (window.innerWidth >= 650){
+                item.style.display = 'block'
+            } else{
+                item.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>

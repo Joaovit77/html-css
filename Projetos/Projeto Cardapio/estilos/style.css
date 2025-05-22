@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{ 
+    background-color: rgb(173, 6, 6);;
+}
+
+header{
+    background-image:linear-gradient(to bottom, orangered ,orange);
+    text-align: center;
+    min-height: 125px;
+}
+
+header > h1{
+    padding-top: 20px;
+    font-weight: 500;
+}
+
+header > p{
+    font-size: 0.9rem;
+    margin:10px 0px 15px 0px;
+}
+
+header span#burguer{
+    display: block;
+    font-size:1.7rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+nav{
+    background-color: orange;
+    display: none;
+}
+
+nav a{
+    text-align: center;
+    padding: 5px;
+    border-top: 1px solid black;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+nav a:hover{
+    background-color: orangered;
+    text-decoration: underline;
+}
+
+
+section#father{
+    margin-top: 30px;
+    display: flex;
+    height: auto;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+div.item-card{
+    background-color: orange;
+    height: 230px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 2px 2px 2px solid rgba(0, 0, 0, 0.747);
+    display: block;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: height 1.3s, width 1.3s;
+}
+
+div.item-card img{
+    margin: auto;
+    display: block;
+    height: 70px;
+    border: none;
+}
+
+div.item-card > h2{
+    font-size: 1.3rem;
+    border: none;
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+    font-weight:400;
+}
+
+div.item-card p{
+    display: inline-block;
+    font-size: 1rem;
+    background-color: orange;
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.363);
+    height: 60px;
+    width: 100%;
+    padding: 5px 10px 0px 10px;
+    border: none;
+}
+
+div.item-card span.preco{
+    display: inline-block;
+    font-size: 1.2rem;
+    background-color: rgb(255, 255, 0);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.432);
+    color: black;
+    font-style: italic;
+    width: 100%;
+    padding: 15px;
+    border-top: 2px solid black;
+}
+
+
+footer p{
+    padding-top: 15px;
+    background-color: red;
+    height: 50px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
